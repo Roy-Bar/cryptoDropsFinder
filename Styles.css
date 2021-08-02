@@ -1,0 +1,76 @@
+body {
+    border: 1px solid blue;
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Roboto-Medium",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+}
+
+header {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 5em;
+    display: flex;
+}
+
+h1 {
+    color: #0090ba;
+    margin: 1em 0 0 1em;
+    width: 100%;
+    height: auto;
+}
+
+main {
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1000px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    display: flex;
+    padding: 3em;
+}
+
+.cryptoMainBox {
+    border: 1px solid black;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+
+}
+
+.cryptoSubBox {
+    box-sizing: border-box;
+    border: 1px solid red;
+    width: 100%;
+    height: 200px;
+    /* margin-left: 1em; */
+    /* flex-wrap: wrap; */
+}
+
+.rangeLabel {
+    /* border: 1px solid black; */
+    /* margin: 25px; */
+}
+
+#timeLabelsBox {
+    box-sizing: border-box;
+    border: 1px solid purple;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#rangeValuesBox {
+    box-sizing: border-box;
+    border: 1px solid green;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
