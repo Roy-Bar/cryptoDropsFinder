@@ -1,6 +1,5 @@
 body {
-    border: 1px solid blue;
-    background-color: white;
+    background-color: #001233;
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
@@ -9,17 +8,29 @@ body {
 }
 
 header {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid hsl(39, 100%, 50%);
+    /* background-color: #023e7dbb; */
+    background: rgb(0,18,51);
+    background: linear-gradient(90deg, rgba(0,18,51,1) 7%, rgba(92,102,143,1) 44%, rgba(0,18,51,1) 93%);
     width: 100%;
     height: 5em;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 h1 {
-    color: #0090ba;
-    margin: 1em 0 0 1em;
-    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    font-size: xx-large;
+    word-spacing: 2px;
+    letter-spacing: 5px;
+    color: white;
+    /* box-shadow: 0px 10px 50px 1px rgb(255 165 0 / 30%); */
+    text-shadow: 0 2px 20px black, -2px 1px 3px orange;
+    margin: 1em 1em 0.5em 1em;
+    width: auto;
     height: auto;
+    text-align: center;
 }
 
 main {
@@ -34,11 +45,18 @@ main {
 }
 
 .cryptoMainBox {
-    border: 1px solid black;
+    border: 1px solid orange;
     width: 100%;
     height: 300px;
     box-sizing: border-box;
 
+}
+
+.cryptoMainBox h3 {
+    color: white;
+    padding-left: 1em;
+    font-size: 1.5em;
+    font-weight: 9000;
 }
 
 .cryptoSubBox {
@@ -52,25 +70,44 @@ main {
 
 .rangeLabel {
     /* border: 1px solid black; */
-    /* margin: 25px; */
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    flex-basis: 100px;
+    text-align: center;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
-#timeLabelsBox {
+.timeLabelsBox {
     box-sizing: border-box;
     border: 1px solid purple;
     height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-#rangeValuesBox {
+.rangeValuesBox {
     box-sizing: border-box;
     border: 1px solid green;
     height: 120px;
     width: 100%;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rangeValuesBox input[type="range"] {
+    /* width: 5em; */
+    flex-basis: 100px;
+}
+
+@media (max-width: 800px) {
+    body {
+        background-color: orange;
+    }
 }
