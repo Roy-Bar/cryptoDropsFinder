@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="RangeInputs.css">
     <link rel="stylesheet" href="Styles.css">
 
     <title>Crypto Drops Finder</title>
@@ -12,18 +18,52 @@
     <header>
     <h1>Crypto Drops Finder</h1>
     </header>
+
+    <nav id="mainNavBar" class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="MainPage.html"><img src="favicon-32x32.png" alt="" width="30" height="24"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="MainPage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Treanding</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Other Hot <span><img id="flameIcon" src="Assests/Icons/flame.svg" alt=""></span> Finds
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">All-Time Drops</a></li>
+                  <li><a class="dropdown-item" href="#">Current Drops</a></li>
+                  <li><a class="dropdown-item" href="#">Biggest Drops</a></li>
+                  <li><a class="dropdown-item" href="#">Biggest Peeks</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <main>
         <div class="cryptoMainBox">
             <div><h3>Bitcoin</h3></div>
         <section class="cryptoSubBox">
-            <div id="timeLabelsBox">
+            <div class="timeLabelsBox">
                 <label class="rangeLabel" for="daily">Daily</label>
                 <label class="rangeLabel" for="weekly">Weekly</label>
                 <label class="rangeLabel" for="monthly">Monthly</label>
                 <label class="rangeLabel" for="yearly">Yearly</label>
                 <label class="rangeLabel" for="allTime">All-Time</label>
             </div>
-            <div id="rangeValuesBox">
+            <div class="rangeValuesBox">
                 <input type="range" id="daily" value="40200" min="40100" max="42600">
                 <input type="range" id="weekly" value="40200" min="35200" max="42600">
                 <input type="range" id="monthly" value="40200" min="29200" max="42600">
@@ -36,23 +76,26 @@
         <div class="cryptoMainBox">
             <div><h3>Ethereum</h3></div>
         <section class="cryptoSubBox">
-            <div id="timeLabelsBox">
+            <div class="timeLabelsBox">
                 <label class="rangeLabel" for="daily">Daily</label>
                 <label class="rangeLabel" for="weekly">Weekly</label>
                 <label class="rangeLabel" for="monthly">Monthly</label>
                 <label class="rangeLabel" for="yearly">Yearly</label>
                 <label class="rangeLabel" for="allTime">All-Time</label>
             </div>
-            <div id="rangeValuesBox">
-                <input type="range" id="daily" value="40200" min="40100" max="42600">
-                <input type="range" id="weekly" value="40200" min="35200" max="42600">
-                <input type="range" id="monthly" value="40200" min="29200" max="42600">
-                <input type="range" id="yearly" value="40200" min="28000" max="64000">
-                <input type="range" id="allTime" value="40200" min="327" max="64000">
+            <div class="rangeValuesBox">
+                <input type="range" id="daily" value="40200" min="40100" max="42600" readonly>
+                <input type="range" id="weekly" value="40200" min="35200" max="42600" readonly>
+                <input type="range" id="monthly" value="40200" min="29200" max="42600" readonly>
+                <input type="range" id="yearly" value="40200" min="28000" max="64000" readonly>
+                <input type="range" id="allTime" value="40200" min="327" max="64000" readonly>
             </div>
         </section>
         </div>
 
     </main>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
