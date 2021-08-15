@@ -1,5 +1,5 @@
 body {
-    background-color: #061121;
+    background-color: #19875410;/*#061121;*/
     box-sizing: border-box;
     width: 100%;
     margin: 0 auto;
@@ -12,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    border-bottom: 1px solid white;
-    background: #061121;
+    /* border-bottom: 1px solid #4a4a4a; */
+    background: #a0cd84;/*#061121;*/
     width: 100%;
     height: 5em;
     display: flex;
@@ -26,14 +26,18 @@ header {
     background-color: #000000bd;
 }
 
+#mainNavBar .btn-outline-success {
+    color: white;
+}
+
 h1 {
     font-family: 'Rubik', sans-serif;
     font-size: xx-large;
     word-spacing: 2px;
     letter-spacing: 5px;
     color: white;
-    text-shadow: 0 2px 20px black, -2px 1px 3px orange;
-    margin-top: 0.75em;
+    text-shadow: 0 2px 20px black, -2px 1px 3px #fde8b5;
+    margin-top: 0.8em;
     width: auto;
     height: auto;
 }
@@ -50,15 +54,17 @@ main {
 }
 
 .cryptoMainBox {
-    border: 1px solid white;
+    border: 1px solid #4a4a4a;
+    border-radius: .25rem;
+    box-shadow: -1px 2px 5px 0px;
     width: 100%;
     height: 300px;
     box-sizing: border-box;
-    background-color: rgb(255 255 255 / 3%);
+    background-color: rgb(255 255 255 / 50%);
 }
 
 .cryptoMainBox h3 {
-    color: white;
+    color:#4a4a4a;
     padding: 1em;
     font-size: 1.4em;
     font-weight: 600;
@@ -67,13 +73,14 @@ main {
 
 .cryptoSubBox {
     box-sizing: border-box;
-    border: 1px solid white;
+    border: 1px solid gray;
+    border-width: 1px 0px;
     width: 100%;
     height: 200px;
 }
 
 .rangeLabel {
-    color: white;
+    color: #4a4a4a;
     padding-bottom: 5px;
     font-size: 1.3em;
     font-weight: 400;
@@ -90,7 +97,8 @@ main {
 
 .timeLabelsBox {
     box-sizing: border-box;
-    border: 1px solid white;
+    border: 1px solid gray;
+    border-width: 1px 0px;
     height: 80px;
     width: 100%;
     display: flex;
@@ -101,7 +109,8 @@ main {
 
 .rangeValuesBox {
     box-sizing: border-box;
-    border: 1px solid white;
+    border: solid gray;
+    border-width: 1px 0px;
     height: 120px;
     width: 100%;
     display: flex;
@@ -121,15 +130,32 @@ main {
     vertical-align: text-top;
 }
 
+#pageFooter {
+    background-color: #a0cd84;/*#061121;*/
+}
 
-footer {
-    color: orange;
+#pageFooter footer {
+    color: #fde8b5;
+}
+
+#footerSubscribe {
+    color: #fde8b5;
+    background-color: #4a4a4a !important;
+}
+
+#footerSubscribe:hover {
+    color: #4a4a4a;
+    background-color: #fde8b5 !important;
+}
+
+.text-muted {
+    color: white !important;
 }
 
 
 @media (max-width: 800px) {
     body {
-        background-color: gray;
+        background-color: #061121;
     }
 
     .cryptoMainBox {

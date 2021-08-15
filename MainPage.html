@@ -15,7 +15,7 @@
     <title>Crypto Drops Finder</title>
 </head>
 <body>
-    <header>
+    <header class="bg-success">
     <h1>Crypto Drops Finder</h1>
     </header>
 
@@ -26,7 +26,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="MainPage.html">Home</a>
               </li>
@@ -48,6 +48,10 @@
                 </ul>
               </li>
             </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Bitcoin" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
       </nav>
@@ -57,18 +61,18 @@
             <div><h3>Bitcoin</h3></div>
         <section class="cryptoSubBox">
             <div class="timeLabelsBox">
-                <label class="rangeLabel" for="daily">Daily</label>
-                <label class="rangeLabel" for="weekly">Weekly</label>
-                <label class="rangeLabel" for="monthly">Monthly</label>
-                <label class="rangeLabel" for="yearly">Yearly</label>
-                <label class="rangeLabel" for="allTime">All-Time</label>
+                <label class="rangeLabel" for="daily_0">Daily</label>
+                <label class="rangeLabel" for="weekly_0">Weekly</label>
+                <label class="rangeLabel" for="monthly_0">Monthly</label>
+                <label class="rangeLabel" for="yearly_0">Yearly</label>
+                <label class="rangeLabel" for="allTime_0">All-Time</label>
             </div>
             <div class="rangeValuesBox">
-                <input type="range" id="daily" value="40200" min="40100" max="42600">
-                <input type="range" id="weekly" value="40200" min="35200" max="42600">
-                <input type="range" id="monthly" value="40200" min="29200" max="42600">
-                <input type="range" id="yearly" value="40200" min="28000" max="64000">
-                <input type="range" id="allTime" value="40200" min="327" max="64000">
+                <input type="range" id="daily_0" value="40200" min="40100" max="42600">
+                <input type="range" id="weekly_0" value="40200" min="35200" max="42600">
+                <input type="range" id="monthly_0" value="40200" min="29200" max="42600">
+                <input type="range" id="yearly_0" value="40200" min="28000" max="64000">
+                <input type="range" id="allTime_0" value="40200" min="327" max="64000">
             </div>
         </section>
         </div>
@@ -77,25 +81,25 @@
             <div><h3>Ethereum</h3></div>
         <section class="cryptoSubBox">
             <div class="timeLabelsBox">
-                <label class="rangeLabel" for="daily">Daily</label>
-                <label class="rangeLabel" for="weekly">Weekly</label>
-                <label class="rangeLabel" for="monthly">Monthly</label>
-                <label class="rangeLabel" for="yearly">Yearly</label>
-                <label class="rangeLabel" for="allTime">All-Time</label>
+                <label class="rangeLabel" for="daily_1">Daily</label>
+                <label class="rangeLabel" for="weekly_1">Weekly</label>
+                <label class="rangeLabel" for="monthly_1">Monthly</label>
+                <label class="rangeLabel" for="yearly_1">Yearly</label>
+                <label class="rangeLabel" for="allTime_1">All-Time</label>
             </div>
             <div class="rangeValuesBox">
-                <input type="range" id="daily" value="40200" min="40100" max="42600" readonly>
-                <input type="range" id="weekly" value="40200" min="35200" max="42600" readonly>
-                <input type="range" id="monthly" value="40200" min="29200" max="42600" readonly>
-                <input type="range" id="yearly" value="40200" min="28000" max="64000" readonly>
-                <input type="range" id="allTime" value="40200" min="327" max="64000" readonly>
+                <input type="range" id="daily_1" value="40200" min="40100" max="42600" readonly>
+                <input type="range" id="weekly_1" value="40200" min="35200" max="42600" readonly>
+                <input type="range" id="monthly_1" value="40200" min="29200" max="42600" readonly>
+                <input type="range" id="yearly_1" value="40200" min="28000" max="64000" readonly>
+                <input type="range" id="allTime_1" value="40200" min="327" max="64000" readonly>
             </div>
         </section>
         </div>
 
     </main>
     
-    <div class="container">
+    <div class="fluid-container bg-success" id="pageFooter">
         <footer class="py-4">
           <div class="row d-flex justify-content-evenly align-items-center border-top pt-4 mt-4">
             <div class="col-3">
@@ -138,13 +142,13 @@
                 <div class="d-flex w-100 gap-2">
                   <label for="newsletter1" class="visually-hidden">Email address</label>
                   <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn bg-dark text-muted" type="button">Subscribe</button>
+                  <button id="footerSubscribe" class="btn bg-dark" type="button">Subscribe</button>
                 </div>
               </form>
             </div>
           </div>
       
-          <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <div class="d-flex justify-content-between p-4 my-4 border-top">
             <p>© 2021 Roy Bar - All rights reserved.</p>
             <ul class="list-unstyled d-flex">
               <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
