@@ -138,6 +138,11 @@ main {
     color: #fde8b5;
 }
 
+#footerMainDiv {
+    width: 100%;
+    margin: 0;
+}
+
 #footerSubscribe {
     color: #fde8b5;
     background-color: #4a4a4a !important;
@@ -150,8 +155,18 @@ main {
 
 .text-muted {
     color: white !important;
+    transition: letter-spacing 0.4s;
 }
 
+.text-muted:hover {
+    /* color: white !important; */
+    /* font-size: 102%; */
+    letter-spacing: 1px;
+}
+
+svg path {
+    fill: #fde8b5;
+}
 
 @media (max-width: 800px) {
     body {
